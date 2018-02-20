@@ -1,3 +1,3 @@
 # Demo AJAX to short and expand links
 
-Program that uses AJAX POST and GET Requests to short and expand links.
+ App that uses the Google URL Shortener API to shorten or expand a URL entered by a user.

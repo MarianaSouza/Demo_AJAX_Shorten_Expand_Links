@@ -49,12 +49,14 @@ function shortenUrl() {
 }
 
 function expand() {
+  if (!$inputField.val()) { return ; }
   $responseField.empty();
   expandUrl();
   return false;
 }
 
 function shorten() {
+  if (!$inputField.val()) { return ; }
   $responseField.empty();
   shortenUrl();
   return false;

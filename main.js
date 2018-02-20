@@ -48,21 +48,21 @@ function shortenUrl() {
 }
 
 function expand() {
+  $responseField.empty();
   if (!$inputField.val()) { 
     $responseField.append('<p>Enter a valid URL</p>');
     return false; 
-  }
-  $responseField.empty();
+  }  
   expandUrl();
   return false;
 }
 
 function shorten() {
+  $responseField.empty();
   if (!$inputField.val()) { 
     $responseField.append('<p>Enter a valid URL</p>');
     return false; 
-  }
-  $responseField.empty();
+  }  
   shortenUrl();
   return false;
 }

@@ -22,7 +22,6 @@ function expandUrl() {
   if (xhr.readyState === XMLHttpRequest.DONE) {
   console.log(xhr.response);
     $responseField.append('<p>Your expanded url is: </p><p>' + xhr.response.longUrl + '</p>');
-    
 		}
 	}
  xhr.open('GET', urlToExpand);
@@ -49,12 +48,21 @@ function shortenUrl() {
 }
 
 function expand() {
+  validateRequest();
   $responseField.empty();
   expandUrl();
   return false;
 }
 
+function validateRequest(){
+  if (!$inputField.val()) { 
+    $responseField.append('<p>Enter a valid URL</p>');
+    return false; 
+  }
+}
+
 function shorten() {
+  validateRequest();
   $responseField.empty();
   shortenUrl();
   return false;

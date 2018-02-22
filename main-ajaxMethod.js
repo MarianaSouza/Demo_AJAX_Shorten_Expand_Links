@@ -1,4 +1,6 @@
-/ Include data for accessing Google APIs
+// Refactored code from main.js that includes AJAX methods in the main functions (expandUrl and shortenUrl)
+
+// Include data for accessing Google APIs
 
 const apiKey = 'AIzaSyBKsPi8dOhaG0vphDtCsk6j-46iDN85cCU';
 const projection = 'FULL';
